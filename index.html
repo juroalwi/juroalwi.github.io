@@ -1,5 +1,8 @@
 <html> 
 <head>  
+  <!-- Image displayed when sharing url. -->
+  <meta name="image" property="og:image" content="./og-image.png">
+
   <!-- Fonts. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +31,8 @@
       grid-template-columns: 6.5cm 13.6cm;
       grid-template-rows: 4cm 7cm 14.5cm 3.0cm ;
       grid-gap: 0.5cm;
-      background-color: #FAF0E0;
-      color: #111;
+      background-color: white;
+      color: black;
       font-family: 'Montserrat', sans-serif;
     }
     #about {
@@ -39,8 +42,8 @@
     #header {
       grid-area: header;
       box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.8);
-      background-color: #BD1F4A;
-      color: #FAF0E0;
+      background: linear-gradient(#6BBED4, #3994BE);
+      color: white;
       text-align: center;
     }
     #name {
@@ -57,7 +60,7 @@
       grid-area: skills;
       padding: 5px;
       box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.8);
-      background-color: #BD1F4A;
+      background: linear-gradient(#6BBED4, #3994BE);
     }
     .title {
       margin-left: 10px;
@@ -72,8 +75,8 @@
       margin: 3px;
       padding: 4px;
       border-radius: 5.5px;
-      background-color: #39375B;
-      color: #FAF0E0;
+      background-color: #19376E;
+      color: white;
     }
     #soft-skills {
       padding: 5px;
@@ -85,8 +88,8 @@
       margin: 3px;
       padding: 4px;
       border-radius: 5.5px;
-      background-color: #FAF0E0;
-      color: #111;
+      background-color: white;
+      color: black;
     }
     #languages {
       padding: 5px;
@@ -103,7 +106,7 @@
       content: '⬤⬤⬤⬤⬤';
       font-size: 16px;
       letter-spacing: 2.2px;
-      background: linear-gradient(90deg, #39375B 100%, #FAF0E0 100%);
+      background: linear-gradient(90deg, #19376E 100%, white 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -115,7 +118,7 @@
       content: '⬤⬤⬤⬤⬤';
       font-size: 16px;
       letter-spacing: 2.2px;
-      background: linear-gradient(90deg, #39375B 65%, #FAF0E0 65%);
+      background: linear-gradient(90deg, #19376E 73%, white 65%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -123,15 +126,15 @@
     #education {
       grid-area: education;
       box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
-      background-color: #111;
-      color: #FAF0E0;
+      background-color: #D8E8F8;
+      color: black;
     }
     #experience {
       grid-area: experience;
       padding: 5px;
       box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
-      background-color: #111;
-      color: #FAF0E0;
+      background-color: #D8E8F8 ;
+      color: black;
     }
     p {
       padding: 0 10px;
@@ -148,8 +151,8 @@
       justify-content: center;
       align-items: center;
       box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
-      background-color: #111;
-      color: #FAF0E0;
+      background-color: black;
+      color: white;
     }
     #ways-to-contact {
       display: flex;
@@ -169,7 +172,7 @@
     }
     #ways-to-contact a {
       text-decoration: none;
-      color: #111;
+      color: black;
     }
   </style>
 </head>
@@ -251,8 +254,7 @@
             Development of a single page application using data fetched from
             an API and managed through a backend developed with Node. It
             allows the user to search food recipes by their name, order and filter
-            them, create recipes and show their detail. The style was achieved
-            using pure CSS.
+            them, create recipes and show their detail. 
           </p>
         <!-- <li>  -->
           <!-- <h3>Full Stack Developer - Virtual Wallet (January 2022):</h3> -->
