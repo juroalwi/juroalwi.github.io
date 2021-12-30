@@ -3,10 +3,10 @@
   <!-- Image displayed when sharing url. -->
   <meta name="image" property="og:image" content="./og-image.jpg">
 
-  <!-- Fonts. -->
+  <!-- Fonts.-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <title>Resume</title>
 
@@ -26,14 +26,14 @@
       grid-template-areas: 
         'about header'
         'about education'
-        'about experience'
         'skills experience'
         'contact contact';
       grid-template-columns: 7.4cm 12.7cm;
-      grid-template-rows: 4cm 5.5cm 1.5cm 14.5cm 2.0cm ;
+      grid-template-rows: 4cm 6.0cm 14.5cm 2.0cm ;
       grid-gap: 0.5cm;
       background-color: white;
       color: black;
+      font-size: 12pt;
       font-family: 'Montserrat', sans-serif;
     }
     #about {
@@ -54,13 +54,13 @@
     }
     #name {
 	    text-transform: uppercase;
-      letter-spacing: 3.2px;
-      font-size: 32px;
+      letter-spacing: 4px;
+      font-size: 24pt;
     }
     #rols {
 	    text-transform: uppercase;
-      letter-spacing: 3.2px;
-      font-size: 20px;
+      letter-spacing: 2px;
+      font-size: 14pt;
     }
     #skills {
       grid-area: skills;
@@ -131,9 +131,17 @@
     }
     #education {
       grid-area: education;
+      padding: 5px;
       box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
       background-color: #D8E8F8;
       color: black;
+    }
+    #education p {
+      padding: 0 10px;
+      margin-bottom: -10px;
+    }
+    #education .title {
+      margin-bottom: -2px;
     }
     #experience {
       grid-area: experience;
@@ -142,8 +150,11 @@
       background-color: #D8E8F8 ;
       color: black;
     }
-    p {
+    #experience p {
       padding: 0 10px;
+    }
+    #experience .title {
+      margin-bottom: -7px;
     }
     #contact {
       grid-area: contact;
@@ -196,10 +207,9 @@
         <!-- I'm Eager to take new challenges in the tech industry, and to connect -->
         <!-- my passions for Computer Science and Maths. -->
 
-        Talented full stack developer and gifted mathematician with
-        Outstanding communication, interpersonal and organizational skills.
-        Looking forward to new opportunities in the IT field, in which I will
-        combine my passions for Computer Science and Maths to make ongoing
+        Talented full stack developer and mathematician;
+        looking forward to new opportunities in the IT field, in which I can
+        combine my passions for Computer Science and Maths to make successful
         contributions.
 
         <!-- Talented and experienced Full Stack Developer and Web programmer looking forward -->
@@ -211,7 +221,7 @@
 
     <div id='header'> 
       <h1 id='name'> 
-        Julian Roberto Alvarez Windey
+        Julian Alvarez Windey
       </h1>
       <h2 id='rols'> 
         Full Stack Development | Maths
@@ -234,12 +244,12 @@
 
       <h2 class='title' style='margin-bottom: -10px;'>Soft skills</h2>
       <ul id='soft-skills'> 
-        <li class='soft-skill'>Resourceful problem solver</li> 
         <li class='soft-skill'>Creative analytical thinker</li> 
         <li class='soft-skill'>Natural leader</li> 
+        <li class='soft-skill'>Resourceful problem solver</li> 
+        <!-- <li class='soft-skill'>Outstanding time management and organizational skills</li>  -->
         <li class='soft-skill'>Detail oriented</li> 
-        <li class='soft-skill'>Highly competent fast learner</li> 
-        <!-- <li class='soft-skill'>Born teacher</li>  -->
+        <!-- <li class='soft-skill'>Born teacher</li> -->
         <!-- <li class='soft-skill'>Easy going</li>  -->
       </ul>
 
