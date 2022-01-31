@@ -7,7 +7,7 @@ body {
 #page {
   margin: 1cm;
   padding: 0.25cm 0cm 0cm 0.25cm;
-  height: 30cm;
+  height: 29cm;
   width: 21cm;
   display: grid;
   grid-template-areas: 
@@ -16,7 +16,7 @@ body {
 	'skills experience'
 	'contact experience';
   grid-template-columns: 7.4cm 12.7cm;
-  grid-template-rows: 4cm 6.0cm 14.5cm 2.5cm ;
+  grid-template-rows: 4cm 6.0cm 14.0cm 2.5cm ;
   grid-gap: 0.5cm;
   background-color: white;
   color: black;
