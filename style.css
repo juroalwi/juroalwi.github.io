@@ -101,8 +101,7 @@ body {
   letter-spacing: 2.2px;
   background: linear-gradient(90deg, #19376E 100%, white 100%);
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 #english::after {
   position: relative;
@@ -113,8 +112,7 @@ body {
   letter-spacing: 2.2px;
   background: linear-gradient(90deg, #19376E 90%, white 65%);
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 #education {
   grid-area: education;
