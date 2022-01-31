@@ -3,198 +3,14 @@
   <!-- Image displayed when sharing url. -->
   <meta name="image" property="og:image" content="./og-image.jpg">
 
+  <link rel="stylesheet" href="style.css"/>
+
   <!-- Fonts.-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <title>Resume</title>
-
-  <style> 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #222;
-    }
-    #page {
-      margin: 1cm;
-      padding: 0.25cm 0cm 0cm 0.25cm;
-      height: 30cm;
-      width: 21cm;
-      display: grid;
-      grid-template-areas: 
-        'about header'
-        'about education'
-        'skills experience'
-        'contact contact';
-      grid-template-columns: 7.4cm 12.7cm;
-      grid-template-rows: 4cm 6.0cm 14.5cm 2.0cm ;
-      grid-gap: 0.5cm;
-      background-color: white;
-      color: black;
-      font-size: 12pt;
-      font-family: 'Montserrat', sans-serif;
-    }
-    #about {
-      grid-area: about;
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-    }
-    #about img {
-      align-self: center;
-    }
-    #header {
-      grid-area: header;
-      box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.8);
-      background: linear-gradient(#6BBED4, #3994BE);
-      color: white;
-      text-align: center;
-    }
-    #name {
-	    text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 24pt;
-    }
-    #rols {
-	    text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 14pt;
-    }
-    #skills {
-      grid-area: skills;
-      padding: 5px;
-      box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.8);
-      background: linear-gradient(#6BBED4, #3994BE);
-    }
-    .title {
-      margin-left: 10px;
-    }
-    #tech-skills {
-      padding: 5px;
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-    }
-    .tech-skill {
-      margin: 3px;
-      padding: 4px;
-      border-radius: 5.5px;
-      background-color: #19376E;
-      color: white;
-    }
-    #soft-skills {
-      padding: 5px;
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-    }
-    .soft-skill {
-      margin: 3px;
-      padding: 4px;
-      border-radius: 5.5px;
-      background-color: white;
-      color: black;
-    }
-    #languages {
-      padding: 5px;
-      list-style: none;
-    }
-    .language {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-    #spanish::after {
-      position: relative;
-      left: 4px;
-      bottom: 2px;
-      content: '⬤⬤⬤⬤⬤';
-      font-size: 16px;
-      letter-spacing: 2.2px;
-      background: linear-gradient(90deg, #19376E 100%, white 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    #english::after {
-      position: relative;
-      left: 4px;
-      bottom: 2px;
-      content: '⬤⬤⬤⬤⬤';
-      font-size: 16px;
-      letter-spacing: 2.2px;
-      background: linear-gradient(90deg, #19376E 90%, white 65%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    #education {
-      grid-area: education;
-      padding: 5px;
-      box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
-      background-color: #D8E8F8;
-      color: black;
-    }
-    #education p {
-      padding: 0 10px;
-      margin-bottom: -10px;
-    }
-    #education .title {
-      margin-bottom: -2px;
-    }
-    #experience {
-      grid-area: experience;
-      padding: 5px;
-      box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
-      background-color: #D8E8F8 ;
-      color: black;
-    }
-    #experience p {
-      padding: 0 10px;
-    }
-    #experience .title {
-      margin-bottom: -7px;
-    }
-    #contact {
-      grid-area: contact;
-      padding: 10px 0px;
-    }
-    #contact-title {
-      margin: 3px 0px;
-      height: 40px;
-      width: 128px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.6);
-      background-color: black;
-      color: white;
-    }
-    #ways-to-contact {
-      position: relative;
-      bottom: 10px;
-      height: 80px;
-      display: flex;
-    }
-    #ways-to-contact ul {
-      position: relative;
-      bottom: 25px;
-    }
-    #ways-to-contact li {
-      margin-left: 5px;
-    }
-    #ways-to-contact img {
-      position: relative;
-      top: 12px;
-      right: 5px;
-      width: 35px;
-    }
-    #ways-to-contact a {
-      text-decoration: none;
-      color: black;
-    }
-  </style>
 </head>
 
 <body> 
@@ -202,20 +18,10 @@
     <div id='about'> 
       <img src='./me.jpeg' width='230px' style='border-radius: 200px'/>
       <p> 
-        <!-- Currently formed as a Full Stack Developer, and with three years completed of  -->
-        <!-- my Math Licenciate degree. -->
-        <!-- I'm Eager to take new challenges in the tech industry, and to connect -->
-        <!-- my passions for Computer Science and Maths. -->
-
-        Talented full stack developer and mathematician;
-        seeking new opportunities in the IT field, in which I can
+        Talented full stack developer and mathematician.
+        Seeking new opportunities in the IT field, in which I can
         combine my passions for Computer Science and Maths to make successful
         contributions.
-
-        <!-- Talented and experienced Full Stack Developer and Web programmer looking forward -->
-        <!-- to new opportunities in the IT field where I can -->
-        <!-- combine my passions and talents for Computer Science and Math to make ongoing -->
-        <!-- contributions to the company. -->
       </p>
     </div>
 
@@ -245,12 +51,10 @@
       <h2 class='title' style='margin-bottom: -10px;'>Soft skills</h2>
       <ul id='soft-skills'> 
         <li class='soft-skill'>Creative analytical thinker</li> 
-        <li class='soft-skill'>Natural leader</li> 
         <li class='soft-skill'>Resourceful problem solver</li> 
-        <!-- <li class='soft-skill'>Outstanding time management and organizational skills</li>  -->
+        <li class='soft-skill'>Natural leader</li> 
+        <li class='soft-skill'>Fast learner</li> 
         <li class='soft-skill'>Detail oriented</li> 
-        <!-- <li class='soft-skill'>Born teacher</li> -->
-        <!-- <li class='soft-skill'>Easy going</li>  -->
       </ul>
 
       <h2 class='title' style='margin-bottom: -10px;'>Languages</h2>
@@ -266,17 +70,15 @@
         <p><b>Henry:</b> Full Stack Developer bootcamp (September 2021 - January 2022)</p>
 
         <p><b>University of Buenos Aires:</b> BSc in Math (2020 - present)</p>
-        <!-- <p><b>Universidad de Buenos Aires:</b> Math degree, 3 years completed (2020 - today)</p> -->
 
         <p><b>National University of la Plata:</b> BSc in Astronomy (2018 - 2020)</p>
-        <!-- <p><b>Universidad Nacional de la Plata:</b> Astronomy degree, 3 years completed (2018 - 2020, not finished)</p> -->
     </div>
 
     <div id='experience'> 
       <h2 class='title'>Experience</h2>
           <h3 class='title'>Teaching Assistant (TA) for Full Stack Development Students (November 2021 - January 2022):</h3>
           <ul> 
-            <li> Succesfully coordinate a group of students to achieve integration to the study group. </li> 
+            <li> Succesfully coordinate a group of students to achieve integration with their teammates. </li> 
             <li> Actively coach students in the solution of problems along the course and promote group collaboration. </li> 
             <li> Creatively propose ideas to improve the Bootcamp processes. </li> 
           </ul>
@@ -284,31 +86,27 @@
           <h3 class='title'>Full Stack Developer - Food Web App (November 2021):</h3>
           <p> 
             Development of a single page application using data fetched from
-            an API and managed through a backend developed with Node. It
+            an external API and managed through a backend developed with Node. It
             allows the user to search food recipes by their name, order and filter
             them, create recipes and show their detail. 
           </p>
-        <!-- <li>  -->
-          <!-- <h3>Full Stack Developer - Virtual Wallet (January 2022):</h3> -->
-          <!-- <p>  -->
-          <!--   ???.  -->
-          <!-- </p> -->
-        <!-- </li> -->
+
+          <h3 class='title'>Full Stack Developer - Crypto Wallet App (January 2021):</h3>
+          <p> 
+            Development of a React Native crypto wallet with a team of six people.
+            I worked primarily on the backend where I had to learn Solidity language
+            in order to connect to the Ethereum blockchain. It
+            allows the user to buy, sell, transfer and stake crpytocurrencies. 
+          </p>
     </div>
 
     <div id='contact'> 
+      <h2 id="contact-title">CONTACT</h2>
+
       <div id='ways-to-contact'> 
-        <h2 id="contact-title">Contact</h2>
-
-        <ul style='list-style: none;'> 
-          <a href='https://goo.gl/maps/nQejwRz3v2pJZrbi9'><li> <img src='./location.svg'/> Buenos Aires, Argentina </li></a> 
-          <a href='mailto:jralvarezwindey@gmail.com'><li> <img src='./mail.svg'/> jralvarezwindey@gmail.com </li></a> 
-        </ul>  
-
-        <ul style='list-style: none;'> 
-          <a href='https://www.linkedin.com/in/jralvarezwindey'><li> <img src='./linkedin.svg'/> linkedin.com/in/jralvarezwindey </li></a>
-          <a href='https://github.com/jralvarezwindey'><li> <img src='./github.svg'/> github.com/jralvarezwindey </li></a>
-        </ul>  
+          <a href='mailto:jralvarezwindey@gmail.com'><img src='./mail.svg'/></a> 
+          <a href='https://www.linkedin.com/in/jralvarezwindey'><img src='./linkedin.svg'/></a>
+          <a href='https://github.com/jralvarezwindey'><img src='./github.svg'/></a>
       </div>
     </div>
   </div>
