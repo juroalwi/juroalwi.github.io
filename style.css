@@ -110,7 +110,7 @@ body {
   content: '⬤⬤⬤⬤⬤';
   font-size: 16px;
   letter-spacing: 2.2px;
-  background: linear-gradient(90deg, #19376E 90%, white 65%);
+  background: linear-gradient(90deg, #19376E 86%, white 86%);
   background-clip: text;
   color: transparent;
 }
