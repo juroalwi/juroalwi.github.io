@@ -100,17 +100,19 @@ body {
   font-size: 16px;
   letter-spacing: 2.2px;
   background: linear-gradient(90deg, #19376E 100%, white 100%);
+ -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 }
 #english::after {
   position: relative;
-  left: 4px;
+  left: 8px;
   bottom: 2px;
   content: '⬤⬤⬤⬤⬤';
   font-size: 16px;
   letter-spacing: 2.2px;
-  background: linear-gradient(90deg, #19376E 86%, white 86%);
+  background: linear-gradient(90deg, #19376E 80%, white 80%);
  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,7 +127,7 @@ body {
 }
 #education p {
   padding: 0 10px;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
 }
 #education .title {
   margin-bottom: -2px;
