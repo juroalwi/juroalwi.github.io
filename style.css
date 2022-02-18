@@ -95,9 +95,9 @@ body {
 #spanish::after {
   position: relative;
   left: 4px;
-  bottom: 2px;
+  bottom: 3px;
   content: '⬤⬤⬤⬤⬤';
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 2.2px;
   background: linear-gradient(90deg, #19376E 100%, white 100%);
  -webkit-background-clip: text;
@@ -107,10 +107,10 @@ body {
 }
 #english::after {
   position: relative;
-  left: 8px;
-  bottom: 2px;
+  left: 8.7px;
+  bottom: 3px;
   content: '⬤⬤⬤⬤⬤';
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 2.2px;
   background: linear-gradient(90deg, #19376E 80%, white 80%);
  -webkit-background-clip: text;
