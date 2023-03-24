@@ -1,120 +1,226 @@
-<html> 
-<head>  
-  <!-- Image displayed when sharing url. -->
-  <meta name="image" property="og:image" content="./og-image.jpg">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <meta name="image" property="og:image" content="./og-image.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="style.css"/>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <header class="header">
+          <img src="./me.jpeg" alt="me" />
 
-  <!-- Fonts.-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+          <h2>
+            Julian Alvarez <br />
+            <span>IT professional & Mathematician</span>
+          </h2>
 
-  <title>Resume</title>
-</head>
+          <!-- <p> -->
+          <!--   Passionate full stack developer and mathematician. Seeking new -->
+          <!--   opportunities in the IT field, in which I can combine my talents for -->
+          <!--   Computer Science and Math to make successful contributions. -->
+          <!-- </p> -->
+        </header>
 
-<body> 
-  <div id='page'> 
-    <div id='about'> 
-      <img src='./me.jpeg' width='230px' style='border-radius: 200px'/>
-      <p> 
-        Passionate full stack developer and mathematician.
-        Seeking new opportunities in the IT field, in which I can
-        combine my talents for Computer Science and Math to make successful
-        contributions.
-      </p>
-    </div>
+        <div class="info-box">
+          <h2>Contact</h2>
 
-    <div id='header'> 
-      <h1 id='name'> 
-        Julian Alvarez Windey
-      </h1>
-      <h2 id='rols'> 
-        Full Stack Development | Math
-      </h2>
-    </div>
+          <div class="contact">
+            <ul>
+              <li>
+                <i class="contact-logo fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:jralvarezwindey@gmail.com" class="contact-txt"
+                  >jralvarezwindey@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="contact-logo fa fa-linkedin" aria-hidden="true"></i>
+                <a
+                  href="https://www.linkedin.com/in/jralvarezwindey/"
+                  class="contact-txt"
+                  >linkedin.com/in/jralvarezwindey</a
+                >
+              </li>
+              <li>
+                <i class="contact-logo fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/jralvarezwindey" class="contact-txt"
+                  >github.com/jralvarezwindey</a
+                >
+              </li>
+              <li>
+                <i class="contact-logo fa fa-globe" aria-hidden="true"></i>
+                <a
+                  href="https://goo.gl/maps/sjdVwz96p4yuRvEQ6"
+                  class="contact-txt"
+                  >Buenos Aires, Argentina</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    <div id='skills'> 
-      <h2 class='title' style='margin-bottom: -10px;'>Tech skills</h2>
-      <ul id='tech-skills'> 
-        <li class='tech-skill'> JavaScript </li>
-        <li class='tech-skill'> Solidity </li>
-        <li class='tech-skill'> HTML </li>
-        <li class='tech-skill'> CSS </li>
-        <li class='tech-skill'> React </li>
-        <li class='tech-skill'> React Native </li>
-        <li class='tech-skill'> Redux </li>
-        <li class='tech-skill'> Node </li>
-        <li class='tech-skill'> Sequelize </li>
-        <li class='tech-skill'> Express </li>
-        <li class='tech-skill'> PostgreSQL </li>
-        <li class='tech-skill'> Web3 </li>
-      </ul>
+        <div class="info-box">
+          <h2>Education</h2>
 
-      <h2 class='title' style='margin-bottom: -10px;'>Soft skills</h2>
-      <ul id='soft-skills'> 
-        <li class='soft-skill'>Creative analytical thinker</li> 
-        <li class='soft-skill'>Resourceful problem solver</li> 
-        <li class='soft-skill'>Natural leader</li> 
-        <li class='soft-skill'>Fast learner</li> 
-        <li class='soft-skill'>Detail oriented</li> 
-      </ul>
+          <ul class="education">
+            <li class="education-item">
+              <ul>
+                <li class="education-date">2021 - 2022</li>
+                <li class="education-title">Full Stack bootcamp</li>
+                <li class="education-institution">Henry</li>
+              </ul>
+            </li>
 
-      <h2 class='title' style='margin-bottom: -10px;'>Languages</h2>
-      <ul id='languages'> 
-        <li class='language' id='spanish'>Spanish: </li> 
-        <li class='language' id='english'>English: </li> 
-      </ul>
-    </div>
+            <li class="education-item">
+              <ul>
+                <li class="education-date">2020 - present</li>
+                <li class="education-title">BSc. in Math</li>
+                <li class="education-institution">
+                  University of Buenos Aires
+                </li>
+              </ul>
+            </li>
 
-    <div id='education'> 
-      <h2 class='title'>Education</h2>
-        <p><b>Henry:</b> Full Stack Developer bootcamp <br/>(Sep. 2021 - Jan. 2022)</p>
-
-        <p><b>University of Buenos Aires:</b> BSc. in Math <br/> (2020 - present)</p>
-
-        <p><b>National University of la Plata:</b> BSc. in Astronomy <br/> (2018 - 2020)</p>
-    </div>
-
-    <div id='experience'> 
-      <h2 class='title'>Experience</h2>
-          <h3 class='title'>Teaching Assistant (TA) for Full Stack Development Students (Nov. 2021 - Jan. 2022):</h3>
-          <ul> 
-            <li> Succesfully coordinate a group of students to achieve integration with their teammates. </li> 
-            <li> Actively help students in problem solving all along the course, and promote group collaboration. </li> 
-            <li> Creatively propose ideas to improve the Bootcamp processes. </li> 
+            <li class="education-item">
+              <ul>
+                <li class="education-date">2018 - 2020</li>
+                <li class="education-title">BSc. in Astronomy</li>
+                <li class="education-institution">University of la Plata</li>
+              </ul>
+            </li>
           </ul>
+        </div>
 
-          <a href="https://jralvarezwindey-food-app.vercel.app" style="text-decoration: none">
-            <h3 class='title'>Full Stack Developer - Food Web App <br/> (Nov. 2021):</h3>
-          </a>
-          <p> 
-            Development of a single page application using data fetched from
-            an external API and managed through a backend developed with Node. It
-            allows the user to search for and create food recipes.
-          </p>
+        <div class="info-box">
+          <h2>Languages</h2>
 
-          <a href="https://vimeo.com/673809018" style="text-decoration: none">
-            <h3 class='title'>Full Stack Developer - Crypto Wallet App <br/> (Jan. 2021):</h3>
-          </a>
-          <p> 
-            Development of a React Native & Solidity crypto wallet that allows the user to buy, sell,
-            transfer and stake crpytocurrencies. The project was done by a team of six people.
-            I worked primarily on the backend where I had to learn Solidity programming language
-            in order to connect to the Ethereum blockchain.
-          </p>
-    </div>
+          <div class="languages">
+            <ul>
+              <li>
+                <p class="lang-txt">English</p>
+                <div class="lang-bar-bg">
+                  <div class="lang-bar-fg lang-bar-en"></div>
+                </div>
+              </li>
 
-    <div id='contact'> 
-      <h2 id="contact-title">CONTACT</h2>
+              <li>
+                <p class="lang-txt">Spanish</p>
+                <div class="lang-bar-bg">
+                  <div class="lang-bar-fg lang-bar-sp"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <div id='ways-to-contact'> 
-          <a href='mailto:jralvarezwindey@gmail.com'><img src='./mail.svg'/></a> 
-          <a href='https://www.linkedin.com/in/jralvarezwindey'><img src='./linkedin.svg'/></a>
-          <a href='https://github.com/jralvarezwindey'><img src='./github.svg'/></a>
-          <a href='https://www.google.com.ar/maps/place/Provincia+de+Buenos+Aires/'><img src='./location.svg'/></a>
+      <div class="right-section">
+        <div class="info-box">
+          <h2 class="right-info-box-title">Experience</h2>
+          <ul>
+            <li class="experience-item">
+              <div class="experience-left">
+                <h4 class="experience-year">Apr. 2022 - Present</h4>
+                <h4 class="experience-company">Indelve</h4>
+              </div>
+              <div class="experience-right">
+                <h4>Junior Web3 developer</h4>
+                <p>
+                  Developed decentralized applications (dApps) using various
+                  blockchain technologies such as Algorand, SIU, and IPFS.
+                  <br />
+                  Designed and implemented smart contracts, ensuring their
+                  security and functionality by conducting extensive testing and
+                  code review.
+                  <br />
+                  Collaborated with team members to build user friendly and
+                  scalable front end interfaces using Angular, React, and other
+                  web technologies.
+                </p>
+              </div>
+            </li>
+
+            <li class="experience-item">
+              <div class="experience-left">
+                <h4 class="experience-year">Nov. 2021 - Jan. 2022</h4>
+                <h4 class="experience-company">HENRY</h4>
+              </div>
+              <div class="experience-right">
+                <h4>Teaching assistant</h4>
+                <p>
+                  Coordinated a group of students to achieve integration with
+                  their teammates, facilitating group collaboration and
+                  effective communication throughout the course. <br />
+                  Actively assisted students in problem-solving, providing
+                  guidance and support to help them overcome obstacles and
+                  achieve their goals.
+                </p>
+              </div>
+            </li>
+
+            <li class="experience-item">
+              <div class="experience-left">
+                <h4 class="experience-year">May 2022 - present</h4>
+                <h4 class="experience-company">TECHO Argentina</h4>
+              </div>
+              <div class="experience-right">
+                <h4>Social volunteer work</h4>
+                <p>
+                  Survey people living in disadvantaged neighborhoods to detect
+                  housing emergency situations. Manage and coordinate materials
+                  unloading at the place of assistance. Lead a group of
+                  volunteers throughout the modular house building process for a
+                  family, delivering a solution for their housing problem.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-box">
+          <h2>Technical skills</h2>
+
+          <ul>
+            <li class="skill-item">
+              <span class="skill-text">Web3</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fg" style="width: 75%"></div>
+              </div>
+            </li>
+
+            <li class="skill-item">
+              <span class="skill-text">Typescript</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fg" style="width: 80%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-text">React</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fg" style="width: 55%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-text">Angular</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fg" style="width: 65%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-text">NodeJS</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fg" style="width: 45%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
