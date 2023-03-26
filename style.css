@@ -16,7 +16,7 @@ body {
   background-color: #aaccdd;
 }
 
-.container {
+#container {
   position: relative;
   margin: 50px;
   width: 100%;
@@ -92,13 +92,12 @@ header p {
 .contact-logo {
   margin-bottom: 7px;
   color: #03a9f4;
-  font-size: 18px;
 }
 
 .contact-txt {
   margin-left: 9px;
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 300;
   text-decoration: none;
 }
@@ -168,7 +167,9 @@ header p {
 }
 
 .experience-left {
+  margin-right: 20px;
   padding-top: 4.5px;
+  min-width: 170px;
 }
 
 .experience-left h4 {
@@ -218,6 +219,86 @@ header p {
   text-transform: uppercase;
 }
 
+@media (max-width: 1000px) {
+  #container {
+    margin: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .left-section .info-box h2 {
+    margin-bottom: 20px;
+  }
+
+  .contact-txt {
+    font-size: 1em;
+  }
+
+  .contact-item {
+    margin-bottom: 10px;
+  }
+
+  .education-item {
+    margin-bottom: 17px;
+  }
+
+  .lang-item {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .education-item {
+    padding-bottom: 7px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .education-date {
+    margin-bottom: 7px;
+  }
+
+  .education-title {
+    display: inline;
+  }
+
+  .education-institution {
+    display: inline;
+    float: right;
+  }
+
+  .lang-item {
+    margin-bottom: 25px;
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 100px 1fr;
+  }
+
+  .lang-bar-bg {
+    position: relative;
+    bottom: 0.7px;
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-item {
+    grid-template-columns: 1fr;
+    margin-bottom: 25px;
+  }
+
+  .skill-text {
+    margin-bottom: 6px;
+  }
+}
 /*
    color: #e85528;
   background-color: #181818;
