@@ -16,11 +16,11 @@ body {
   background-color: #aaccdd;
 }
 
-#container {
+.container {
   position: relative;
   margin: 50px;
   width: 100%;
-  min-height: 1000px;
+  min-width: 300px;
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -220,7 +220,7 @@ header p {
 }
 
 @media (max-width: 1000px) {
-  #container {
+  .container {
     margin: 10px;
     grid-template-columns: 1fr;
   }
@@ -299,7 +299,3 @@ header p {
     margin-bottom: 6px;
   }
 }
-/*
-   color: #e85528;
-  background-color: #181818;
-  */
