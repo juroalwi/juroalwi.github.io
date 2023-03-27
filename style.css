@@ -9,7 +9,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +17,7 @@ body {
 }
 
 .container {
-  position: relative;
   margin: 50px;
-  width: 100%;
   min-width: 300px;
   max-width: 1000px;
   display: grid;
@@ -29,14 +27,12 @@ body {
 }
 
 .left-section {
-  position: relative;
   padding: 20px;
   background-color: #003147;
   color: #fff;
 }
 
 header {
-  position: relative;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -53,7 +49,6 @@ header img {
 
 header h2 {
   padding-bottom: 10px;
-  width: 90%;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.7em;
@@ -64,10 +59,6 @@ header h2 {
 header h2 span {
   font-size: 0.6em;
   font-weight: 400;
-}
-
-header p {
-  padding: 15px;
 }
 
 .info-box {
@@ -81,21 +72,24 @@ header p {
   letter-spacing: 1px;
 }
 
-.left-section .info-box h2 {
-  margin-bottom: 7px;
-}
-
 .info-box ul {
   list-style: none;
 }
 
-.contact-logo {
+.left-section .info-box h2 {
   margin-bottom: 7px;
+}
+
+.contact-item {
+  margin-bottom: 4px;
+}
+
+.contact-logo {
+  margin-right: 9px;
   color: #03a9f4;
 }
 
 .contact-txt {
-  margin-left: 9px;
   color: #fff;
   font-size: 0.85em;
   font-weight: 300;
@@ -107,18 +101,20 @@ header p {
 }
 
 .education-date {
-  margin-bottom: 0px;
   color: #03a9f4;
   font-weight: 500;
 }
+
 .education-title {
-  margin-bottom: 0px;
   font-weight: 600;
 }
 
 .education-institution {
-  margin-bottom: 0px;
   font-weight: 300;
+}
+
+.lang-item {
+  margin-bottom: 9px;
 }
 
 .lang-txt {
@@ -126,7 +122,6 @@ header p {
 }
 
 .lang-bar-bg {
-  margin-bottom: 9px;
   height: 7px;
   width: 100%;
   background-color: #081921;
@@ -137,17 +132,8 @@ header p {
   background-color: #03a9f4;
 }
 
-.lang-bar-en {
-  width: 71%;
-}
-
-.lang-bar-sp {
-  width: 93%;
-}
-
 .right-section {
   padding: 20px;
-  position: relative;
   background-color: #fff;
   color: #333;
 }
@@ -168,27 +154,24 @@ header p {
 
 .experience-left {
   margin-right: 20px;
-  padding-top: 4.5px;
+  padding-top: 2.5px;
   min-width: 170px;
-}
-
-.experience-left h4 {
   color: #848c90;
-  text-transform: uppercase;
 }
 
 .experience-year {
+  margin-bottom: 4px;
   font-size: 0.85em;
   font-weight: 500;
-  margin-bottom: 4px;
 }
 
 .experience-company {
   font-size: 1.14em;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-.experience-right h4 {
+.experience-role {
   color: #2a7da2;
   font-weight: 700;
   font-size: 1.1em;
@@ -271,15 +254,9 @@ header p {
   }
 
   .lang-item {
-    margin-bottom: 25px;
     display: grid;
-    align-items: flex-end;
     grid-template-columns: 100px 1fr;
-  }
-
-  .lang-bar-bg {
-    position: relative;
-    bottom: 0.7px;
+    align-items: center;
   }
 }
 
@@ -291,8 +268,8 @@ header p {
 
 @media (max-width: 600px) {
   .skill-item {
-    grid-template-columns: 1fr;
     margin-bottom: 25px;
+    grid-template-columns: 1fr;
   }
 
   .skill-text {
