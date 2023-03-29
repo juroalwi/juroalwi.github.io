@@ -21,7 +21,7 @@ body {
   min-width: 300px;
   max-width: 1000px;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 2fr;
   background-color: #fff;
   box-shadow: 15px 35px 25px rgba(0, 0, 0, 0.2);
 }
@@ -276,4 +276,3 @@ header h2 span {
     margin-bottom: 6px;
   }
 }
-
