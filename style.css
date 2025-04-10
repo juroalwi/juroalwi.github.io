@@ -62,15 +62,15 @@ body {
   color: #e45758;
 }
 
-@media screen {
-  .tagline {
-    background: linear-gradient(90deg, #ff758f, #fcb045);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-}
+/* @media screen { */
+/*   .tagline { */
+/*     background: linear-gradient(90deg, #ff758f, #fcb045); */
+/*     background-clip: text; */
+/*     -webkit-background-clip: text; */
+/*     -webkit-text-fill-color: transparent; */
+/*     color: transparent; */
+/*   } */
+/* } */
 
 .section h2 {
   margin-bottom: 20px;
