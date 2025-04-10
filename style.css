@@ -1,274 +1,135 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-align: justify;
 }
 
 body {
-  min-height: 10vh;
+  background: #fdfdfd;
+  color: #333;
+  padding: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #aaccdd;
 }
 
-.container {
-  margin: 50px;
-  min-width: 300px;
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: #fff;
-  box-shadow: 15px 35px 25px rgba(0, 0, 0, 0.2);
-}
-
-.left-section {
-  padding: 20px;
-  background-color: #003147;
-  color: #fff;
-}
-
-header {
-  margin-bottom: 20px;
+.resume {
+  background: #fff;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  gap: 24px;
 }
 
-header img {
-  width: 240px;
-  height: 240px;
-  margin-bottom: 17px;
-  border-radius: 50%;
-}
-
-header h2 {
-  padding-bottom: 10px;
+.header {
   text-align: center;
-  text-transform: uppercase;
-  font-size: 1.9em;
-  font-weight: 600;
-  letter-spacing: 0.3px;
 }
 
-.info-box {
-  padding: 13px;
-  margin-bottom: 11px;
+.name-line {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+.name-line::before,
+.name-line::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background: #d7263d;
+  vertical-align: middle;
+  margin: 0 10px;
 }
 
-.info-box h2 {
-  text-transform: uppercase;
+.title {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 1.27em;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 6px;
+  background: linear-gradient(90deg, #ff758f, #fcb045);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.info-box ul {
-  list-style: none;
-}
-
-.left-section .info-box h2 {
-  margin-bottom: 9px;
-}
-
-.contact-item {
-  margin-bottom: 4px;
-}
-
-.contact-logo {
-  margin-right: 9px;
-  color: #03a9f4;
-}
-
-.contact-txt {
-  color: #fff;
-  font-size: 0.85em;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.education-item {
+.section-item {
   margin-bottom: 8px;
 }
 
-.education-date {
-  color: #03a9f4;
-  font-weight: 500;
-}
-
-.education-title {
+.section-item h3 {
+  font-size: 1rem;
   font-weight: 600;
+  color: #ff758f;
 }
 
-.education-institution {
-  font-weight: 300;
+.section-item p {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  line-height: 1.5;
 }
 
-.lang-item {
-  margin-bottom: 9px;
+.section-item .place {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666;
 }
 
-.lang-txt {
-  margin-bottom: 5px;
+.section-item .period {
+  font-size: 0.85rem;
+  color: #999;
 }
 
-.lang-bar-bg {
-  height: 7px;
-  width: 100%;
-  background-color: #081921;
-}
-
-.lang-bar-fg {
-  height: 2.4px;
-  background-color: #03a9f4;
-}
-
-.right-section {
-  padding: 20px;
-  background-color: #ffffff;
-  color: #333;
-}
-
-.right-section h2 {
-  color: #003147;
-}
-
-.right-section .info-box h2 {
-  margin-bottom: 20px;
-}
-
-.experience-item {
-  margin-bottom: 26px;
+.skills {
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
 }
 
-.experience-left {
-  margin-right: 20px;
-  padding-top: 2.5px;
-  min-width: 170px;
-  color: #848c90;
-}
-
-.experience-year {
-  margin-bottom: 4px;
-  font-size: 0.85em;
+.skill {
+  background: #fff4f6;
+  border-left: 4px solid #ff758f;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  color: #8a1c1c;
   font-weight: 500;
 }
 
-.experience-company {
-  font-size: 1.14em;
-  font-weight: 700;
-  text-transform: uppercase;
+.contact {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.experience-role {
-  color: #2a7da2;
-  font-weight: 700;
-  font-size: 1.1em;
-  text-transform: uppercase;
+.contact-item {
+  font-size: 0.9rem;
+  color: #777;
 }
 
-.skill-item {
-  margin-bottom: 17px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 2fr 5fr;
-}
-
-.skill-bar-bg {
-  height: 12px;
-  width: 100%;
-  background-color: #f0f0f0;
-}
-
-.skill-bar-fg {
-  height: 100%;
-  background-color: #03a9f4;
-}
-
-.skill-text {
-  color: #848c99;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1000px) {
-  .container {
-    margin: 10px;
-    grid-template-columns: 1fr;
-  }
-
-  .left-section .info-box h2 {
-    margin-bottom: 20px;
-  }
-
-  .contact-txt {
-    font-size: 1em;
-  }
-
-  .contact-item {
-    margin-bottom: 10px;
-  }
-
-  .education-item {
-    margin-bottom: 17px;
-  }
-
-  .lang-item {
-    margin-bottom: 25px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1000px) {
-  .contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .education-item {
-    padding-bottom: 7px;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .education-date {
-    margin-bottom: 7px;
-  }
-
-  .education-title {
-    display: inline;
-  }
-
-  .education-institution {
-    display: inline;
-    float: right;
-  }
-
-  .lang-item {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    align-items: center;
-  }
-}
-
-@media (max-width: 700px) {
-  .experience-item {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .skill-item {
-    margin-bottom: 25px;
-    grid-template-columns: 1fr;
-  }
-
-  .skill-text {
-    margin-bottom: 6px;
-  }
+.contact-item a {
+  text-decoration: none;
+  color: #777;
+  margin-left: 6px;
 }

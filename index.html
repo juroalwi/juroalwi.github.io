@@ -1,217 +1,135 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julian Alvarez — Resume</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
 
-<head>
-  <title>Resume</title>
-  <meta http-equiv='cache-control' content='no-cache'>
-  <meta http-equiv='expires' content='0'>
-  <meta http-equiv='pragma' content='no-cache'>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="image" property="og:image" content="./og-image.jpg" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-</head>
-
-<body>
-  <div class="container">
-    <div class="left-section">
-      <header class="header">
-        <img src="./me.jpeg" alt="me" />
-
-        <h2>
-          Julian Alvarez <br />
-          <span style="font-size: 0.66em; font-weight: 500;">Web3 Front End Developer</span><br />
-          <span style="font-size: 0.42em;">Crafting enticing designs through clean code development</span>
-        </h2>
-      </header>
-
-      <div class="info-box">
-        <h2>Contact</h2>
-
-        <ul class="contact">
-          <li class="contact-item">
-            <i class="contact-logo fa fa-envelope" aria-hidden="true"></i>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=juroalwi@gmail.com"
-              class="contact-txt">juroalwi@gmail.com</a>
-          </li>
-
-          <li class="contact-item">
-            <i class="contact-logo fa fa-linkedin" aria-hidden="true"></i>
-            <a href="https://www.linkedin.com/in/juroalwi/" class="contact-txt">linkedin.com/in/juroalwi</a>
-          </li>
-
-          <li class="contact-item">
-            <i class="contact-logo fa fa-github" aria-hidden="true"></i>
-            <a href="https://github.com/juroalwi" class="contact-txt">github.com/juroalwi</a>
-          </li>
-
-          <li class="contact-item">
-            <i class="contact-logo fa fa-globe" aria-hidden="true"></i>
-            <a href="https://goo.gl/maps/sjdVwz96p4yuRvEQ6" class="contact-txt">Buenos Aires, Argentina</a>
-          </li>
-        </ul>
+  <body>
+    <div class="resume">
+      <div class="header">
+        <div class="name-line">Julian Alvarez</div>
+        <div class="title">Web3 Full Stack Developer</div>
+        <div class="tagline">
+          Crafting enticing designs through clean code development
+        </div>
       </div>
 
-      <div class="info-box">
+      <div class="section">
+        <h2>Experience</h2>
+
+        <div class="section-item">
+          <h3>Fountain</h3>
+          <div class="place">
+            Full Stack Developer <span class="period">Dec. 2024 - Present</span>
+          </div>
+          <p>
+            Worked on the development of News2Pump, a trading and social
+            media-style platform built on the Solana network. Built real-time
+            token stat displays and integrated Twitter metadata for newly
+            launched tokens via the News2Pump bot. Developed trading swap
+            functionality for both unbonded and graduated tokens. Implemented
+            responsive UI components and animations, handling data fetching and
+            caching with React Query. Developed a NestJS backend to support
+            authentication, transaction logging, and social features such as
+            token likes and token-based spaces. Managed data storage and
+            querying through PostgreSQL.
+          </p>
+        </div>
+
+        <div class="section-item">
+          <h3>Bitnovo</h3>
+          <div class="place">
+            React Native Developer
+            <span class="period">Jul. 2023 - Dec. 2024</span>
+          </div>
+          <p>
+            Maintained and developed new features for a React Native crypto
+            wallet. Managed user-side API requests for real-time crypto prices,
+            NFT metadata, and token details. Utilized Ethers.js to interact with
+            Solidity smart contracts and compute gas fees. Built a non-custodial
+            earning ecosystem offering pooled and multi-protocol DeFi staking
+            options.
+          </p>
+        </div>
+
+        <div class="section-item">
+          <h3>Indelve</h3>
+          <div class="place">
+            Front End Developer
+            <span class="period">Apr. 2022 - Mar. 2023</span>
+          </div>
+          <p>
+            Helped build a space-themed Web3 game marketplace using Angular and
+            React. Designed and tested Algorand smart contracts ensuring secure
+            functionality through rigorous code review.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <div class="skill">Typescript</div>
+          <div class="skill">React</div>
+          <div class="skill">React Native</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">NestJS</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Web3</div>
+          <div class="skill">Solana</div>
+          <div class="skill">Ethers.js</div>
+        </div>
+      </div>
+
+      <div class="section">
         <h2>Education</h2>
+        <div class="section-item">
+          <h3>University of Buenos Aires</h3>
+          <div class="place">
+            BSc. in Mathematics <span class="period">2020 - Present</span>
+          </div>
+        </div>
 
-        <ul class="education">
-          <li class="education-item">
-            <p class="education-date">2021 - 2022</p>
-            <p class="education-title">Full Stack bootcamp</p>
-            <p class="education-institution">Henry</p>
-          </li>
-
-          <li class="education-item">
-            <p class="education-date">2020 - present</p>
-            <p class="education-title">BSc. in Math</p>
-            <p class="education-institution">University of Buenos Aires</p>
-          </li>
-
-          <li class="education-item">
-            <p class="education-date">2024 - present</p>
-            <p class="education-title">BSc. in Computer Science</p>
-            <p class="education-institution">University of Buenos Aires</p>
-          </li>
-        </ul>
+        <div class="section-item">
+          <h3>Henry Bootcamp</h3>
+          <div class="place">
+            Full Stack Web Development <span class="period">2021 - 2022</span>
+          </div>
+        </div>
       </div>
 
-      <div class="info-box">
-        <h2>Languages</h2>
+      <div class="contact">
+        <div class="contact-item">
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:juroalwi@gmail.com">juroalwi@gmail.com</a>
+        </div>
 
-        <ul>
-          <li class="lang-item">
-            <p class="lang-txt">English</p>
-            <div class="lang-bar-bg">
-              <div class="lang-bar-fg" style="width: 71%;"></div>
-            </div>
-          </li>
+        <div class="contact-item">
+          <i class="fa fa-linkedin"></i>
+          <a href="https://linkedin.com/in/juroalwi" target="_blank"
+            >linkedin.com/in/juroalwi</a
+          >
+        </div>
 
-          <li class="lang-item">
-            <p class="lang-txt">Spanish</p>
-            <div class="lang-bar-bg">
-              <div class="lang-bar-fg" style="width: 93%;"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+        <div class="contact-item">
+          <i class="fa fa-github"></i>
+          <a href="https://github.com/juroalwi" target="_blank"
+            >github.com/juroalwi</a
+          >
+        </div>
 
-    <div class="right-section">
-      <div class="info-box">
-        <h2 class="right-info-box-title">Experience</h2>
-        <ul>
-          <li class="experience-item">
-            <div class="experience-left">
-              <h4 class="experience-year">May. 2023 - Present</h4>
-              <h4 class="experience-company">Bitnovo</h4>
-            </div>
-            <div>
-              <h4 class="experience-role">Web3 front end developer</h4>
-              <p>
-                Mantained and developed new features for a React Native mobile crypto wallet.
-                <br />
-                Managed user-side API requests for fetching real-time crypto prices,
-                NFT metadata, and token details.
-                <br />
-                Utilized EtherJS to interact with Solidity smart contracts, build transactions
-                and compute gas fees.
-                <br />
-                Built a non-custodial earning ecosystem, providing users with pooled and
-                multi-protocol DeFi staking options.
-              </p>
-            </div>
-          </li>
-
-          <li class="experience-item">
-            <div class="experience-left">
-              <h4 class="experience-year">Apr. 2022 - May. 2023</h4>
-              <h4 class="experience-company">Indelve</h4>
-            </div>
-            <div>
-              <h4 class="experience-role">Web3 full stack developer</h4>
-              <p>
-                Collaborated with team members to build the marketplace for a space-themed Web3 gaming platform,
-                using Angular, React, and other web technologies.
-                <br />
-                Designed and deployed smart contracts on the Algorand blockchain, ensuring their
-                security and functionality by conducting extensive testing and code reviewing.
-              </p>
-            </div>
-          </li>
-
-          <li class="experience-item">
-            <div class="experience-left">
-              <span class="experience-year">Nov. 2021 - Jan. 2022</span>
-              <h4 class="experience-company">Henry<h4>
-            </div>
-            <div>
-              <h4 class="experience-role">Teaching assistant</h4>
-              <p>
-                Guided students through their learning process and assisted them in the development of their
-                communication skills. Actively promoted teamwork through collaborative imparted lessons.
-              </p>
-            </div>
-          </li>
-
-          <li class="experience-item">
-            <div class="experience-left">
-              <h4 class="experience-year">May 2022 - present</h4>
-              <h4 class="experience-company">TECHO Argentina</h4>
-            </div>
-            <div>
-              <h4 class="experience-role">Volunteer work</h4>
-              <p>
-                Led volunteer teams in surveying disadvantaged communities to identify housing needs.
-                Supervised groups in the construction of emergency family settlements.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="info-box">
-        <h2>Technical skills</h2>
-
-        <ul>
-          <li class="skill-item">
-            <span class="skill-text">Web3</span>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fg" style="width: 75%"></div>
-            </div>
-          </li>
-
-          <li class="skill-item">
-            <span class="skill-text">Typescript</span>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fg" style="width: 80%"></div>
-            </div>
-          </li>
-
-          <li class="skill-item">
-            <span class="skill-text">NodeJS</span>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fg" style="width: 45%"></div>
-            </div>
-          </li>
-
-          <li class="skill-item">
-            <span class="skill-text">React native</span>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fg" style="width: 70%"></div>
-            </div>
-          </li>
-
-          <li class="skill-item">
-            <span class="skill-text">React</span>
-            <div class="skill-bar-bg">
-              <div class="skill-bar-fg" style="width: 55%"></div>
-            </div>
-          </li>
-        </ul>
+        <div class="contact-item">
+          <i class="fa fa-map-marker"></i>
+          <span>Buenos Aires, Argentina</span>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
