@@ -21,11 +21,11 @@ body {
   background: #fff;
   width: 880px;
   height: 1250px;
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 }
 
 .header {
@@ -58,7 +58,7 @@ body {
 .tagline {
   font-size: 1.1rem;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 4px;
   color: #e45758;
 }
 
@@ -72,15 +72,16 @@ body {
 /*   } */
 /* } */
 
+.section {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
 .section h2 {
-  margin-bottom: 20px;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.section-item {
-  margin-bottom: 10px;
 }
 
 .section-item h3 {
@@ -91,7 +92,7 @@ body {
 
 .section-item p {
   font-size: 0.9rem;
-  margin-top: 6px;
+  margin-top: 2px;
   line-height: 1.5;
 }
 
