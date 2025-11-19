@@ -132,3 +132,14 @@ body {
   color: #777;
   margin-left: 6px;
 }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+}
