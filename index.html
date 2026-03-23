@@ -10,14 +10,22 @@
         <meta property="og:image" content="./resume.png" />
         <meta property="og:image:width" content="4800" />
         <meta property="og:image:height" content="2520" />
+        <link rel="alternate" hreflang="en" href="/" />
+        <link rel="alternate" hreflang="es" href="/es/" />
+        <link rel="alternate" hreflang="x-default" href="/" />
         <link rel="stylesheet" href="./style.css" />
     </head>
 
     <body>
+        <div class="lang-switch">
+            <a href="./index.html" class="active">EN</a>
+            <a href="./es/index.html">ES</a>
+        </div>
+
         <div class="resume">
             <div class="header">
                 <div class="name-line">Julian Alvarez</div>
-                <div class="title">Full stack / Web3 Engineer</div>
+                <div class="title">Backend Engineer</div>
                 <div class="tagline">
                     Bridging rigorous mathematical thinking with scalable
                     software design
@@ -30,77 +38,99 @@
                 <div class="section-item">
                     <h3>Ares</h3>
                     <p class="place">
-                        Web3 Backend Developer
+                        Backend Engineer
                         <span class="period">Dec. 2024 - Jan 2026</span>
                     </p>
                     <p style="font-size: 14px">
-                        Developed 4 backend services in a NestJS monorepo
+                        Developed 4 backend services in a Node.js monorepo
                         architecture, handling real-time crypto market data and
                         processing ~30k token swaps per minute via Redis
-                        pipelines. <br />
+                        pipelines and PostgreSQL materialized views.
+                        <br />
                         Designed a WebSocket architecture supporting thousands
                         of concurrent connections for real-time trading alerts.
                         <br />
-                        Integrated with Telegram API through our custom Ares
-                        bot, to provide users with a single interface to
-                        seamlessly visualize and manage trading calls. <br />
+                        Integrated our "Ares" bot with Telegram API, to provide
+                        users with a single interface to visualize and manage
+                        trading calls.
+                        <br />
+                        Monitored production systems using Google Cloud Platform
+                        (GCP), analyzing logs and system load metrics to debug
+                        issues, identify bottlenecks, and improve service
+                        reliability.
+                        <br />
+                        Built optimized and high-performance frontend
+                        architectures using React, Next.js and TypeScript,
+                        delivering seamless user experiences and maintainable
+                        codebases.
+                        <!--<br />-->
+                        Collaborated effectively with a remote team using Agile
+                        strategies to iterate based on user feedback, and
+                        achieve scalable and secure solutions.
+                        <br />
                     </p>
                 </div>
 
                 <div class="section-item">
                     <h3>Bitnovo</h3>
                     <p class="place">
-                        Web3 React Native Developer
+                        React Native Developer
                         <span class="period">Jul. 2023 - Dec. 2024</span>
                     </p>
                     <p style="font-size: 14px">
-                        Maintained and developed new features for a React Native
-                        crypto wallet. Managed user-side API requests for
-                        real-time crypto prices, NFT metadata, and token
-                        details, leveraging React Query for optimized data
-                        fetching. Utilized Ethers.js to interact with Solidity
-                        smart contracts and compute gas fees. Built a
-                        non-custodial earning ecosystem offering pooled and
-                        multi-protocol DeFi staking options.
+                        Developed new features for a React Native crypto wallet,
+                        including a non-custodial DeFi staking ecosystem
+                        offering pooled and multi-protocol options.
+                        <br />
+                        Managed user-side API requests for real-time crypto
+                        prices, NFT metadata, and token details using REST,
+                        GraphQL and IPFS.
+                        <br />
+                        Utilized Ethers.js and Viem to interact with Solidity
+                        smart contracts and to achieve robust transaction
+                        execution.
                     </p>
                 </div>
 
                 <div class="section-item">
                     <h3>Indelve</h3>
                     <p class="place">
-                        Web3 Backend Developer
+                        Backend Engineer
                         <span class="period">Apr. 2022 - Mar. 2023</span>
                     </p>
                     <p style="font-size: 14px">
-                        Built and deployed scalable backends for marketplaces,
-                        minting stations, and NFT generators. The core tech
-                        stack included TypeScript, Express, and PostgreSQL for
-                        robust data management.<br />
-
-                        Developed smart contracts using TEAL and Python (via the
-                        PyTeal library).<br />
-
-                        Contributed to frontend development using React,
-                        managing component styling with Bootstrap, and data
-                        fetching and caching via React Query.<br />
+                        Contributed to efficient frontend systems using both
+                        Angular and React frameworks, and managed component
+                        styling with Bootstrap.
+                        <br />
+                        Built and deployed scalable Node.js backends for
+                        marketplaces, minting stations, and NFT generators.
+                        Leveraged PostgreSQL for robust data management, and
+                        IPFS protocol for decentralized metadata storage.
+                        <br />
+                        Developed secure and robust smart contracts for the
+                        Algorand blockchain using TEAL and Python.
+                        <br />
                     </p>
                 </div>
             </div>
             <div class="section">
                 <h2>Technical Skills</h2>
                 <div class="skills">
-                    <div class="skill">Typescript</div>
-                    <div class="skill">React</div>
-                    <div class="skill">React Native</div>
+                    <div class="skill">ML & AI</div>
+                    <div class="skill">Statistics</div>
+                    <div class="skill">Graphs</div>
+                    <div class="skill">Redis</div>
                     <div class="skill">Node.js</div>
                     <div class="skill">NestJS</div>
                     <div class="skill">PostgreSQL</div>
-                    <div class="skill">Web3</div>
-                    <div class="skill">Solana</div>
-                    <div class="skill">Ethers.js</div>
-                    <div class="skill">Statistics</div>
-                    <div class="skill">Optimization</div>
-                    <div class="skill">Modelling</div>
+                    <div class="skill">TypeScript</div>
+                    <div class="skill">Next.js</div>
+                    <div class="skill">React</div>
+                    <div class="skill">React Native</div>
+                    <div class="skill">Angular</div>
+                    <!--<div class="skill">Web3</div>
+                    <div class="skill">Ethers.js</div>-->
                 </div>
             </div>
 
@@ -116,9 +146,7 @@
                         Developed a solid background in advanced optimization,
                         stochastic processes, and numerical analysis, covering
                         topics from PDEs solved by finite difference and finite
-                        element methods to martingale theory. Built a strong
-                        theoretical foundation with practical applications in
-                        data modeling, computation, and simulation.
+                        element methods to martingale theory.
                     </p>
                 </div>
 
@@ -134,19 +162,17 @@
                         Covered exploratory data analysis, regression and
                         classification methods, and computational linear
                         algebra, alongside optimization, graph algorithms, and
-                        linear programming. Emphasized translating mathematical
-                        insights into efficient analytical and predictive
-                        models.
+                        linear programming.
                     </p>
                 </div>
 
-                <div class="section-item">
+                <!--<div class="section-item">
                     <h3>Henry Bootcamp</h3>
                     <p class="place">
                         Full Stack Web Development
                         <span class="period">2021 - 2022</span>
                     </p>
-                </div>
+                </div>-->
             </div>
             <div class="contact">
                 <div class="contact-item">
