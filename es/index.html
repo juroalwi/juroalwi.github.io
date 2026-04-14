@@ -1,208 +1,200 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <title>Julian — Currículum</title>
-        <link rel="icon" type="image/svg+xml" href="../resume.svg" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Julian — Currículum" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="../resume.png" />
-        <meta property="og:image:width" content="4800" />
-        <meta property="og:image:height" content="2520" />
-        <link rel="alternate" hreflang="en" href="/" />
-        <link rel="alternate" hreflang="es" href="/es/" />
-        <link rel="alternate" hreflang="x-default" href="/" />
-        <link rel="stylesheet" href="../style.css" />
-    </head>
+  <head>
+    <title>Julian — Currículum</title>
+    <link rel="icon" type="image/svg+xml" href="../resume.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Julian — Currículum" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../resume.png" />
+    <meta property="og:image:width" content="4800" />
+    <meta property="og:image:height" content="2520" />
+    <link rel="alternate" hreflang="en" href="/" />
+    <link rel="alternate" hreflang="es" href="/es/" />
+    <link rel="alternate" hreflang="x-default" href="/" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-    <body>
-        <div class="lang-switch">
-            <a href="../index.html">EN</a>
-            <a href="./index.html" class="active">ES</a>
+  <body>
+    <div class="lang-switch">
+      <a href="../index.html">EN</a>
+      <a href="./index.html" class="active">ES</a>
+    </div>
+
+    <div class="resume">
+      <div class="header">
+        <div class="name-line">Julian Alvarez</div>
+        <div class="title">Desarrollador Backend</div>
+        <div class="tagline">
+          Construyendo soluciones escalables de datos en tiempo real
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Experiencia</h2>
+
+        <div class="section-item">
+          <h3>Ares</h3>
+          <p class="place">
+            Desarrollador Full Stack
+            <span class="period">Dec. 2024 - Ene. 2026</span>
+          </p>
+          <p style="font-size: 14px">
+            Desarrollé 4 servicios backend dentro de una arquitectura monorepo
+            con Node.js para analizar métricas cripto en tiempo real, procesando
+            ~30k transacciones por minuto de Solana mediante Redis y vistas
+            materializadas en Postgres.
+            <br />
+            Diseñé una arquitectura WebSocket capaz de soportar miles de
+            conexiones y permitir alertas de trading en tiempo real.
+            <br />
+            Integré nuestro bot “Ares” con la API de Telegram para brindar a los
+            usuarios una única interfaz a través de la cual visualizar y
+            gestionar sus alertas de trading cripto.
+            <br />
+            Monitoreé sistemas en producción mediante GCP, analizando logs y
+            métricas para detectar cuellos de botella, depurar problemas y
+            mejorar la estabilidad del servicio.
+            <br />
+            Construí arquitecturas frontend optimizadas y de alto rendimiento
+            usando React, Next.js y TypeScript, brindando experiencias de
+            usuario fluidas e interfaces dinámicas.
+            <br />
+            Colaboré con un equipo remoto utilizando metodologías ágiles para
+            iterar a partir del feedback de usuarios y desarrollar soluciones
+            escalables y seguras.
+            <br />
+          </p>
         </div>
 
-        <div class="resume">
-            <div class="header">
-                <div class="name-line">Julian Alvarez</div>
-                <div class="title">Desarrollador Backend</div>
-                <div class="tagline">
-                    Construyendo soluciones escalables de datos en tiempo real
-                </div>
-            </div>
+        <div class="section-item">
+          <h3>Bitnovo</h3>
+          <p class="place">
+            Desarrollador Frontend
+            <span class="period">Jul. 2023 - Dec. 2024</span>
+          </p>
+          <p style="font-size: 14px">
+            Desarrollé nuevas funcionalidades para una billetera cripto en React
+            Native, incluyendo un ecosistema de staking DeFi no custodio con
+            opciones pooled y multi-protocolo.
+            <br />
+            Gestioné solicitudes a APIs del lado del cliente para obtener
+            precios cripto en tiempo real, metadata de NFTs y datos de tokens
+            con REST, GraphQL e IPFS.
+            <br />
+            Utilicé Ethers.js y Viem para interactuar con smart contracts de
+            redes EVM y asegurar transacciones robustas.
+          </p>
+        </div>
 
-            <div class="section">
-                <h2>Experiencia</h2>
+        <div class="section-item">
+          <h3>Indelve</h3>
+          <p class="place">
+            Desarrollador Full Stack
+            <span class="period">Abr. 2022 - Mar. 2023</span>
+          </p>
+          <p style="font-size: 14px">
+            Desarrollé SPAs frontend modernas mediante Angular y React, creando
+            interfaces de usuario intuitivas y escalables. Implementé estilos
+            consistentes mediante Bootstrap para lograr coherencia visual en
+            toda la aplicación.
+            <br />
+            Diseñé smart contracts seguros y eficientes para la blockchain de
+            Algorand a través del lenguaje ensamblador TEAL y su SDK para Python
+            (PyTEAL).
+            <br />
+            Desplegué backends escalables en Node.js para marketplaces,
+            plataformas de minting y generadores de NFTs, utilizando PostgreSQL
+            para la gestión de datos e IPFS para el almacenamiento
+            descentralizado de metadata.
+            <br />
+          </p>
+        </div>
+      </div>
 
-                <div class="section-item">
-                    <h3>Ares</h3>
-                    <p class="place">
-                        Desarrollador Full Stack
-                        <span class="period">Dec. 2024 - Ene. 2026</span>
-                    </p>
-                    <p style="font-size: 14px">
-                        Desarrollé 4 servicios backend dentro de una
-                        arquitectura monorepo con Node.js para analizar métricas
-                        cripto en tiempo real, procesando ~30k transacciones por
-                        minuto mediante Redis y vistas materializadas en
-                        PostgreSQL.
-                        <br />
-                        Diseñé una arquitectura WebSocket capaz de soportar
-                        miles de conexiones y permitir alertas de trading en
-                        tiempo real.
-                        <br />
-                        Integré nuestro bot “Ares” con la API de Telegram para
-                        brindar a los usuarios una única interfaz a través de la
-                        cual visualizar y gestionar sus alertas de trading.
-                        <br />
-                        Monitoreé sistemas en producción mediante GCP,
-                        analizando logs y métricas para detectar cuellos de
-                        botella, depurar problemas y mejorar la estabilidad del
-                        servicio.
-                        <br />
-                        Construí arquitecturas frontend optimizadas y de alto
-                        rendimiento usando React, Next.js y TypeScript,
-                        brindando experiencias de usuario fluidas e interfaces
-                        dinámicas.
-                        <br />
-                        Colaboré con un equipo remoto utilizando metodologías
-                        ágiles para iterar a partir del feedback de usuarios y
-                        desarrollar soluciones escalables y seguras.
-                        <br />
-                    </p>
-                </div>
+      <div class="section">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills">
+          <div class="skill">TypeScript</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">NestJS</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Redis</div>
+          <div class="skill">React</div>
+          <div class="skill">React Native</div>
+          <div class="skill">Next.js</div>
+          <div class="skill">Angular</div>
+          <div class="skill">ML & IA</div>
+          <div class="skill">Estadística</div>
+          <div class="skill">Grafos</div>
+        </div>
+      </div>
 
-                <div class="section-item">
-                    <h3>Bitnovo</h3>
-                    <p class="place">
-                        Desarrollador Frontend
-                        <span class="period">Jul. 2023 - Dec. 2024</span>
-                    </p>
-                    <p style="font-size: 14px">
-                        Desarrollé nuevas funcionalidades para una billetera
-                        cripto en React Native, incluyendo un ecosistema de
-                        staking DeFi no custodio con opciones pooled y
-                        multi-protocolo.
-                        <br />
-                        Gestioné solicitudes a APIs del lado del cliente para
-                        obtener precios cripto en tiempo real, metadata de NFTs
-                        y datos de tokens con REST, GraphQL e IPFS.
-                        <br />
-                        Utilicé Ethers.js y Viem para interactuar con contratos
-                        en Solidity y asegurar una ejecución de transacciones
-                        robusta.
-                    </p>
-                </div>
+      <div class="section">
+        <h2>Educación</h2>
+        <div class="section-item">
+          <h3>Universidad de Buenos Aires</h3>
+          <p class="place">
+            Lic. en Matemática Aplicada
+            <span class="period">2020 - 2026</span>
+          </p>
+          <p style="font-size: 14px">
+            Formación en optimización avanzada, teoría de probabilidades y
+            análisis numérico, incluyendo resolución de EDPs mediante elementos
+            finitos y teoría de espacios topológicos aplicada al análisis de
+            datos.
+          </p>
+        </div>
 
-                <div class="section-item">
-                    <h3>Indelve</h3>
-                    <p class="place">
-                        Desarrollador Full Stack
-                        <span class="period">Abr. 2022 - Mar. 2023</span>
-                    </p>
-                    <p style="font-size: 14px">
-                        Desarrollé SPAs frontend modernas mediante Angular y
-                        React, creando interfaces de usuario intuitivas y
-                        escalables. Implementé estilos consistentes mediante
-                        Bootstrap para lograr coherencia visual en toda la
-                        aplicación.
-                        <br />
-                        Diseñé smart contracts seguros y eficientes para la
-                        blockchain de Algorand a través del lenguaje ensamblador
-                        TEAL y su SDK para Python (PyTEAL).
-                        <br />
-                        Desplegué backends escalables en Node.js para
-                        marketplaces, plataformas de minting y generadores de
-                        NFTs, utilizando PostgreSQL para la gestión de datos e
-                        IPFS para el almacenamiento descentralizado de metadata.
-                        <br />
-                    </p>
-                </div>
-            </div>
+        <div class="section-item">
+          <h3>Universidad de Buenos Aires</h3>
+          <p class="place">
+            Lic. en Ciencias de Datos
+            <span class="period">2020 - 2026</span>
+          </p>
+          <p style="font-size: 14px">
+            Estudio de estadística aplicada, diseño de algoritmos y machine
+            learning. Enfoque en métodos de regresión y clasificación, redes
+            neuronales, aprendizaje profundo, álgebra lineal computacional,
+            algoritmos en grafos y programación lineal.
+          </p>
+        </div>
 
-            <div class="section">
-                <h2>Habilidades Técnicas</h2>
-                <div class="skills">
-                    <div class="skill">TypeScript</div>
-                    <div class="skill">Node.js</div>
-                    <div class="skill">NestJS</div>
-                    <div class="skill">PostgreSQL</div>
-                    <div class="skill">Redis</div>
-                    <div class="skill">React</div>
-                    <div class="skill">React Native</div>
-                    <div class="skill">Next.js</div>
-                    <div class="skill">Angular</div>
-                    <div class="skill">ML & IA</div>
-                    <div class="skill">Estadística</div>
-                    <div class="skill">Grafos</div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Educación</h2>
-                <div class="section-item">
-                    <h3>Universidad de Buenos Aires</h3>
-                    <p class="place">
-                        Lic. en Matemática Aplicada
-                        <span class="period">2020 - 2026</span>
-                    </p>
-                    <p style="font-size: 14px">
-                        Formación en optimización avanzada, teoría de
-                        probabilidades y análisis numérico, incluyendo
-                        resolución de EDPs mediante elementos finitos y teoría
-                        de espacios topológicos aplicada al análisis de datos.
-                    </p>
-                </div>
-
-                <div class="section-item">
-                    <h3>Universidad de Buenos Aires</h3>
-                    <p class="place">
-                        Lic. en Ciencias de Datos
-                        <span class="period">2020 - 2026</span>
-                    </p>
-                    <p style="font-size: 14px">
-                        Estudio de estadística aplicada, diseño de algoritmos y
-                        machine learning. Enfoque en métodos de regresión y
-                        clasificación, redes neuronales, aprendizaje profundo,
-                        álgebra lineal computacional, algoritmos en grafos y
-                        programación lineal.
-                    </p>
-                </div>
-
-                <!--<div class="section-item">
+        <!--<div class="section-item">
                     <h3>Henry Bootcamp</h3>
                     <p class="place">
                         Desarrollo Web Full Stack
                         <span class="period">2021 - 2022</span>
                     </p>
                 </div>-->
-            </div>
+      </div>
 
-            <div class="contact">
-                <div class="contact-item">
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:juroalwi@gmail.com">juroalwi@gmail.com</a>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa fa-linkedin"></i>
-                    <a href="https://linkedin.com/in/juroalwi" target="_blank"
-                        >linkedin.com/in/juroalwi</a
-                    >
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa fa-github"></i>
-                    <a href="https://github.com/juroalwi" target="_blank"
-                        >github.com/juroalwi</a
-                    >
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa fa-map-marker"></i>
-                    <span>Buenos Aires, Argentina</span>
-                </div>
-            </div>
+      <div class="contact">
+        <div class="contact-item">
+          <i class="fa fa-envelope"></i>
+          <a href="mailto:juroalwi@gmail.com">juroalwi@gmail.com</a>
         </div>
-    </body>
+
+        <div class="contact-item">
+          <i class="fa fa-linkedin"></i>
+          <a href="https://linkedin.com/in/juroalwi" target="_blank"
+            >linkedin.com/in/juroalwi</a
+          >
+        </div>
+
+        <div class="contact-item">
+          <i class="fa fa-github"></i>
+          <a href="https://github.com/juroalwi" target="_blank"
+            >github.com/juroalwi</a
+          >
+        </div>
+
+        <div class="contact-item">
+          <i class="fa fa-map-marker"></i>
+          <span>Buenos Aires, Argentina</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
