@@ -20,10 +20,10 @@ body {
 .resume {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 30px;
   width: 880px;
   height: 1250px;
-  padding: 20px;
+  padding: 30px;
   background: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
@@ -65,24 +65,40 @@ body {
   letter-spacing: 1px;
 }
 
-.section-item h3 {
+.section-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.section-item-place {
   font-size: 1rem;
   font-weight: 600;
   color: #ff758f;
 }
 
-.section-item p {
-  font-size: 0.9rem;
+.section-item-role::before {
+  content: "·";
+  margin-right: 0.4rem;
 }
-
-.section-item .place {
-  font-size: 0.95rem;
+.section-item-role::after {
+  content: "·";
+  margin-left: 0.4rem;
+}
+.section-item-role {
+  font-size: 0.85rem;
   font-weight: 500;
   color: #666;
 }
 
-.section-item .period {
-  font-size: 0.85rem;
+.section-item-period::before {
+  content: "(";
+}
+.section-item-period::after {
+  content: ")";
+}
+.section-item-period {
+  font-size: 0.8rem;
   color: #999;
 }
 
